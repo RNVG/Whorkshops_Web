@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Usuarios</title>
+</head>
+<body>
+
+  <h1>Registro</h1>
+
+    <!-- Para correr el php despues de cada accion -->
+  <form action="index.php" method="post">
+    <label>
+      Nombre:
+      <input type="text" name="nombre" />
+    </label>
+    <br />
+
+    <label>
+      Apellido:
+      <input type="text" name="apellido" />
+    </label>
+    <br />
+
+    <label>
+      Correo:
+      <input type="email" name="correo" />
+    </label>
+    <br />
+
+    <label>
+      Teléfono:
+      <input type="text" name="telefono" />
+    </label>
+    <br /><br />
+
+    <button type="submit">Guardar</button>
+  </form>
+</body>
+</html>
