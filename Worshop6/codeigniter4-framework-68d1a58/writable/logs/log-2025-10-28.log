@@ -1,0 +1,442 @@
+ERROR - 2025-10-28 16:50:32 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:50:48 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:50:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:50:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:50:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:50:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:56:48 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:56:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:56:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:56:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:56:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:57:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:57:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:59:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'worshop5' in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'worshop5' in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:59:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'worshop5' in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'Worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'worshop5' in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:59:50 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'worshop5' in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'worshop5' in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2025-10-28 16:59:50 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'worshop5' in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'worshop5', 3306, '', 0)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'worshop5' in C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SHOW TABLES')
+#3 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(933): App\Controllers\Home->dbTest()
+#4 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\Framework\codeigniter4-framework-68d1a58\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
